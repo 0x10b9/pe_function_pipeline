@@ -1,0 +1,22 @@
+{
+ "0x140001000": {
+  "name": "compute_checksum",
+  "expected": "benign"
+ },
+ "0x1400012c0": {
+  "name": "fetch_remote_file",
+  "expected": "suspicious"
+ },
+ "0x1400010f0": {
+  "name": "log_message",
+  "expected": "benign"
+ },
+ "0x1400011d0": {
+  "name": "persist_run_key",
+  "expected": "suspicious"
+ },
+ "0x140001300": {
+  "name": "run_shell_command",
+  "expected": "suspicious"
+ }
+}

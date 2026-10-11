@@ -1,0 +1,6 @@
+angr>=9.2
+pefile
+numpy
+scipy
+# only needed to rebuild the benign test fixture (samples/build.sh):
+ziglang

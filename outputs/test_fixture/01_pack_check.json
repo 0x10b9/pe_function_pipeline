@@ -1,0 +1,63 @@
+{
+ "sections": [
+  {
+   "name": ".text",
+   "entropy": 6.381,
+   "raw_size": 476672,
+   "virtual_size": 476534,
+   "executable": true,
+   "writable": false
+  },
+  {
+   "name": ".rdata",
+   "entropy": 2.545,
+   "raw_size": 285184,
+   "virtual_size": 284848,
+   "executable": false,
+   "writable": false
+  },
+  {
+   "name": ".buildid",
+   "entropy": 0.947,
+   "raw_size": 512,
+   "virtual_size": 69,
+   "executable": false,
+   "writable": false
+  },
+  {
+   "name": ".data",
+   "entropy": 0.07,
+   "raw_size": 53248,
+   "virtual_size": 57472,
+   "executable": false,
+   "writable": true
+  },
+  {
+   "name": ".pdata",
+   "entropy": 5.77,
+   "raw_size": 10240,
+   "virtual_size": 10176,
+   "executable": false,
+   "writable": false
+  },
+  {
+   "name": ".tls",
+   "entropy": -0.0,
+   "raw_size": 512,
+   "virtual_size": 32,
+   "executable": false,
+   "writable": true
+  },
+  {
+   "name": ".reloc",
+   "entropy": 5.062,
+   "raw_size": 512,
+   "virtual_size": 488,
+   "executable": false,
+   "writable": false
+  }
+ ],
+ "n_imports": 111,
+ "likely_packed": false,
+ "reasons": []
+}

